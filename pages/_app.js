@@ -8,5 +8,9 @@ export default MyApp
 
 MyApp.propTypes = {
   Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.objectOf().isRequired,
+  pageProps: PropTypes.shape({}),
+}
+
+MyApp.defaultProps = {
+  pageProps: {},
 }
